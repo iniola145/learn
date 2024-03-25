@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    font-family: sans-serif;
+    line-height: 1.5;
+    --lorange: #EE7E01;
+}
+li{
+    display: inline;
+}
+a{
+    text-decoration: none;
+}
+.sub-main-1{
+    height: 8vh;
+    background: #F1F1F1;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    gap: 210px;
+}
+.sub-nav-1{
+    padding: 10px 0;
+}
+
+.start a{
+    text-decoration: none;
+    color: #555555;
+    transition: all .5s ease-in-out;
+    font-weight: 500;
+    padding: 18px 15px 15px 15px;
+    border-top: 3px solid transparent;
+    position: relative;
+}
+.start a:hover{
+    color: var(--lorange);
+    /* border-top: 3px solid var(--lorange); */
+}
+.start a::after{
+    content: "";
+    height: 3px;
+    background: var(--lorange);
+    width: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: .3s ease-in-out;
+}
+.start a:hover::after{
+    width: 100%;
+}
+#edit{
+    font-weight: 700;
+    color: var(--lorange);
+}
+.figure1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-self: flex-end;
+}
+.country:hover{
+    color: #014086;
+}
+.country{
+    color: #6283a7;
+    transition: all.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.bxs-down-arrow{
+    color: black;
+}
+.sub-main-2{
+    background: white;
+    display: flex;
+    height: 9vh;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    color: black;
+    /* font-size: 30px;
+    font-weight: 900; */
+    padding: 0 0 0 20px;
+}
+
+.sub-nav-2 a{
+    color: black;
+    padding: 22px 15px 17.5px 15px;
+    border-bottom: 3px solid transparent;
+    transition: all .5s ease-in-out;
+    position: relative;
+}
+.sub-nav-2 a:hover{
+    background: #F1F1F1;
+}
+.sub-nav-2 a::after{
+    content: "";
+    height: 3px;
+    background: var(--lorange);
+    width: 0px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: .3s ease-in-out;
+}
+.sub-nav-2 a:hover::after{
+    width: 100%;
+    
+}
+.last{
+    display: flex;
+    /* padding: 0 0 0 40px; */
+    background-color: #F1F1F1;
+    width: 22%;
+
+}
+.search{
+    padding: 19px 10px 18px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 300px;
+}
+.search-1{
+    color: #555555;
+}
+.bx-search{
+    color: black;
+}
+.bank-bar{
+    background: var(--lorange);
+    flex-basis: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bank-bar1{
+    color: white;
+}
+.bx-lock-alt{
+    color: white;
+}
+.image{
+    background: url(./Images/corporatebanking.png);
+    height: 83vh;
+}
