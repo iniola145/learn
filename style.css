@@ -149,3 +149,19 @@ a{
     background: url(./Images/corporatebanking.png);
     height: 83vh;
 }
+.heading-1{
+    animation-name: slideinLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 3;6
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+@keyframes slideinLeft {
+    from{
+        transform: scaleX(300px);
+    }
+    to{
+        transform: scaleX(0);
+    }
+}
